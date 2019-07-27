@@ -12,7 +12,7 @@ docker-compose up -d
 - jupyterhub notebook: http://localhost:8000 (login myuser/password)
 - livy: http://localhost:18998
 - namenode: http://localhost:9870
-- datanode: ttp://localhost:9864
-- resourcemanger: ttp://localhost:8088
-- nodemanager: ttp://localhost:8042
-- jobhistory: ttp://localhost:19888
+- datanode: http://localhost:9864
+- resourcemanger: http://localhost:8088
+- nodemanager: http://localhost:8042
+- jobhistory: http://localhost:19888
