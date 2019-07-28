@@ -10,7 +10,7 @@ docker-compose up -d
 ``` 
 
 - jupyterhub notebook: http://localhost:8000 (login myuser/password)
-- livy: http://localhost:18998
+- livy: http://localhost:8998
 - namenode: http://localhost:9870
 - datanode: http://localhost:9864
 - resourcemanger: http://localhost:8088

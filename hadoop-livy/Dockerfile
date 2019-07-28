@@ -14,6 +14,10 @@ EXPOSE 8998
 
 ADD conf/livy.conf /opt/livy/conf
 ADD conf/spark-blacklist.conf /opt/livy/conf
+
+RUN echo ". /env.sh" >> /opt/livy/conf/livy-env.sh
+RUN chmod +x /opt/livy/conf/livy-env.sh
+RUN mkdir -p /opt/livy/logs
 RUN echo "$LIVY_HOME/bin/livy-server start" >> /entrypoint.sh
 
 CMD /entrypoint.sh && sleep infinity
